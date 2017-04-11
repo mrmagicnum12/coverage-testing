@@ -1,0 +1,20 @@
+{
+  "name": "coverage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "NODE_ENV=TEST istanbul cover _mocha; cp coverage/lcov-report/index.html test/coverage.html",
+    "test": "mocha",
+    "showcoverage": "open coverage/lcov-report/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "ramda": "^0.23.0"
+  }
+}
